@@ -3,7 +3,8 @@
     /* position: absolute; */
     background-color: rgb(18, 18, 18);
     color: rgb(168, 168, 168);
-    width: 519px;
+    width:100%;
+    min-width: 60px;
     height: 39px;
     text-indent: 10px;
     border-radius:25px 0px 0 25px;
@@ -51,17 +52,44 @@
     max-width: 100%;
 }
 
-.searchbar {
-    flex: 1;
+.middle-section {
+    flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
     align-items: center;
-    max-width: 519px;
-    min-width: 200px;
-    flex-shrink: 0;
-    flex-grow: 1;
+    max-width: 550px;
+    min-width: 100px;
     /* background-color: aqua; */
     margin-left: 20px;
 }
+.search-logo{
+min-width: 66px;
+background-color: rgb(34,34,34);
+height: 43px;
+justify-content: center;
+display: flex;
+align-items: center;
+border-radius: 0px 27px 27px 0px;
+}
+.search-logo img{
+    width: 25px;
+height: 25px;
+}
+.mic-logo{
+    margin-left: 10px;
+min-width: 45px;
+background-color: rgb(23,23,23);
+height: 43px;
+justify-content: center;
+display: flex;
+align-items: center;
+border-radius: 30px;
+}
+.mic-logo img{
+    width:20px;
+    height: 24px;
+}
+
 
 .right-section {
     height: auto;
@@ -112,4 +140,12 @@
 .pro-img img{
     width: 100%;
     border-radius: 30px;
+}
+@media (max-width: 600px) {
+    .bell,.camera{
+       display: none;
+    }
+    .right-section{
+        margin-right: 0;
+    }
 }
